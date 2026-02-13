@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FileDown, Share2, Calendar, Settings, FileText, AlertTriangle } from 'lucide-react';
-import { useCriteria } from '../context/CriteriaContext';
+import { useCriteria } from '../../domains/criteria/state/CriteriaContext';
 import { MEDIA_OUTLETS, MOCK_ARTICLES } from '../data/mockData';
 
 export function Report() {

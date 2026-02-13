@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Filter, Calendar, Building2, Tag } from 'lucide-react';
 import Link from "next/link";
 import { MOCK_ARTICLES, MEDIA_OUTLETS } from '../data/mockData';
-import { useCriteria } from '../context/CriteriaContext';
+import { useCriteria } from '../../domains/criteria/state/CriteriaContext';
 
 export function Articles() {
   const { criteria } = useCriteria();

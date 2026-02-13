@@ -1,8 +1,9 @@
 "use client";
 
-import { About } from "../pages/About";
+import { AboutView } from "../../domains/marketing/AboutView";
 
 export default function AboutPage() {
-  return <About />;
+  return <AboutView />;
 }
+
 

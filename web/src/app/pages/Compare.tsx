@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Info, TrendingUp, TrendingDown } from 'lucide-react';
 import { MEDIA_OUTLETS, MOCK_MEDIA_ANALYSIS, AVERAGE_SCORES } from '../data/mockData';
-import { useCriteria } from '../context/CriteriaContext';
+import { useCriteria } from '../../domains/criteria/state/CriteriaContext';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 export function Compare() {

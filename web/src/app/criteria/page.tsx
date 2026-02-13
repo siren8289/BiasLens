@@ -1,8 +1,9 @@
 "use client";
 
-import { CriteriaSetup } from "../pages/CriteriaSetup";
+import { CriteriaSetupView } from "../../domains/criteria/CriteriaSetupView";
 
 export default function CriteriaPage() {
-  return <CriteriaSetup />;
+  return <CriteriaSetupView />;
 }
+
 

@@ -1,8 +1,9 @@
 "use client";
 
-import { Compare } from "../pages/Compare";
+import { CompareView } from "../../domains/compare/CompareView";
 
 export default function ComparePage() {
-  return <Compare />;
+  return <CompareView />;
 }
+
 

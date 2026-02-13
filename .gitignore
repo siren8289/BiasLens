@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build / cache
+.next/
+out/
+build/
+dist/
+spring/.gradle/
+spring/build/
+
+# Lock (optional; uncomment to ignore)
+# package-lock.json
+
+# Env / IDE
+.env
+.env.local
+*.log
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

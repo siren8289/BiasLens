@@ -1,8 +1,9 @@
 "use client";
 
-import { ArticleDetail } from "../../pages/ArticleDetail";
+import { ArticleDetailView } from "../../../domains/articles/ArticleDetailView";
 
 export default function ArticleDetailPage() {
-  return <ArticleDetail />;
+  return <ArticleDetailView />;
 }
+
 

@@ -1,8 +1,9 @@
 "use client";
 
-import { Dashboard } from "../pages/Dashboard";
+import { DashboardView } from "../../domains/dashboard/DashboardView";
 
 export default function DashboardPage() {
-  return <Dashboard />;
+  return <DashboardView />;
 }
+
 

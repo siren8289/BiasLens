@@ -1,5 +1,5 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
-import { Criteria, CRITERIA_OPTIONS } from '../types';
+import React, { createContext, useContext, useState, ReactNode } from "react";
+import { Criteria, CRITERIA_OPTIONS } from "../../../app/types";
 
 interface CriteriaContextType {
   criteria: Criteria[];
@@ -8,14 +8,16 @@ interface CriteriaContextType {
   hasAnyCriteriaEnabled: boolean;
 }
 
-const CriteriaContext = createContext<CriteriaContextType | undefined>(undefined);
+const CriteriaContext = createContext<CriteriaContextType | undefined>(
+  undefined,
+);
 
 export function CriteriaProvider({ children }: { children: ReactNode }) {
   const [criteria, setCriteria] = useState<Criteria[]>(CRITERIA_OPTIONS);
 
   const toggleCriteria = (id: string) => {
     setCriteria((prev) =>
-      prev.map((c) => (c.id === id ? { ...c, enabled: !c.enabled } : c))
+      prev.map((c) => (c.id === id ? { ...c, enabled: !c.enabled } : c)),
     );
   };
 
@@ -37,7 +39,8 @@ export function CriteriaProvider({ children }: { children: ReactNode }) {
 export function useCriteria() {
   const context = useContext(CriteriaContext);
   if (context === undefined) {
-    throw new Error('useCriteria must be used within a CriteriaProvider');
+    throw new Error("useCriteria must be used within a CriteriaProvider");
   }
   return context;
 }
+

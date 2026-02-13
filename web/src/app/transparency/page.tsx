@@ -1,8 +1,9 @@
 "use client";
 
-import { Transparency } from "../pages/Transparency";
+import { TransparencyView } from "../../domains/marketing/TransparencyView";
 
 export default function TransparencyPage() {
-  return <Transparency />;
+  return <TransparencyView />;
 }
+
 

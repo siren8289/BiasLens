@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { ArrowLeft, ExternalLink, Calendar, Building2, AlertCircle } from 'lucide-react';
 import { MOCK_ARTICLES } from '../data/mockData';
-import { useCriteria } from '../context/CriteriaContext';
+import { useCriteria } from '../../domains/criteria/state/CriteriaContext';
 
 export function ArticleDetail() {
   const params = useParams() as { id?: string };

@@ -1,8 +1,9 @@
 "use client";
 
-import { Articles } from "../pages/Articles";
+import { ArticlesView } from "../../domains/articles/ArticlesView";
 
 export default function ArticlesPage() {
-  return <Articles />;
+  return <ArticlesView />;
 }
+
 

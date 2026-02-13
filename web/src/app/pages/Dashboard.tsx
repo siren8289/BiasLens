@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from "next/link";
 import { Settings, FileText, GitCompare, FileBarChart, TrendingUp, TrendingDown, Minus } from 'lucide-react';
-import { useCriteria } from '../context/CriteriaContext';
+import { useCriteria } from '../../domains/criteria/state/CriteriaContext';
 import { MOCK_MEDIA_ANALYSIS, AVERAGE_SCORES } from '../data/mockData';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, ResponsiveContainer, Legend } from 'recharts';
 

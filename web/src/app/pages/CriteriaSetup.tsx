@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useRouter } from "next/navigation";
 import { Check, Info, ArrowRight } from 'lucide-react';
-import { useCriteria } from '../context/CriteriaContext';
+import { useCriteria } from '../../domains/criteria/state/CriteriaContext';
 
 export function CriteriaSetup() {
   const { criteria, toggleCriteria, hasAnyCriteriaEnabled } = useCriteria();

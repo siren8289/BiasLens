@@ -1,0 +1,49 @@
+openapi: 3.0.3
+info:
+  title: BiasLens API
+  description: |
+    BiasLens 백엔드 REST API 명세.
+    뉴스 표현 분석·비교 서비스에 필요한 엔드포인트를 제공합니다.
+  version: 0.0.1
+  contact:
+    name: BiasLens
+
+servers:
+  - url: http://localhost:8080
+    description: 로컬 개발 서버
+
+tags:
+  - name: health
+    description: 서버 상태 확인
+  - name: criteria
+    description: 표현 기준 (예정)
+  - name: articles
+    description: 기사/분석 (예정)
+
+paths:
+  /health:
+    get:
+      tags:
+        - health
+      summary: 헬스 체크
+      description: 서버 동작 여부를 확인합니다.
+      operationId: health
+      responses:
+        '200':
+          description: 정상
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+
+components:
+  schemas:
+    HealthResponse:
+      type: object
+      required:
+        - status
+      properties:
+        status:
+          type: string
+          example: OK
+      description: 헬스 체크 응답

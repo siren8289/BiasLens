@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, Eye, Settings, BarChart3, Search } from 'lucide-react';
-import { useCriteria } from '../context/CriteriaContext';
+import { useCriteria } from '../../domains/criteria/state/CriteriaContext';
 
 export function Home() {
   const { hasAnyCriteriaEnabled } = useCriteria();

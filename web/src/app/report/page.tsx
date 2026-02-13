@@ -1,8 +1,9 @@
 "use client";
 
-import { Report } from "../pages/Report";
+import { ReportView } from "../../domains/report/ReportView";
 
 export default function ReportPage() {
-  return <Report />;
+  return <ReportView />;
 }
+
 
